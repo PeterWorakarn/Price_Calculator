@@ -1,0 +1,151 @@
+.bubble {
+  position: relative;
+}
+
+.bubble:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  border-bottom: 20px solid transparent;
+  border-bottom-color: transparent;
+  border-left: 20px solid white;
+  border-right: 20px solid transparent;
+  transform: rotate(320deg);
+}
+
+.info>.section>.title {
+  margin-right: 50px;
+}
+
+.info>.section>.title:before {
+  content: '';
+  background: #759FFF;
+  display: block;
+  width: 40px;
+  height: 5px;
+}
+
+.invite {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.number {
+  color: #fff;
+}
+
+.invite:before {
+  content: '';
+  background: #fff;
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-bottom: 5px;
+}
+
+.ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.stub,
+.check {
+  box-sizing: border-box;
+}
+
+
+.stub {
+  background: hsl(222, 100%, 73%);
+  height: 250px;
+  width: 250px;
+  color: white;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.stub:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 20px solid #6366F1;
+  border-left: 20px solid hsl(222, 100%, 73%);
+  width: 0;
+}
+
+.stub:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 20px solid #6366F1;
+  border-left: 20px solid hsl(222, 100%, 73%);
+  width: 0;
+}
+
+
+.check {
+  background: #fff;
+  height: 250px;
+  width: 450px;
+  padding: 40px;
+  position: relative;
+}
+
+.check:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 20px solid #6366F1;
+  border-right: 20px solid #fff;
+  width: 0;
+}
+
+.check:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 20px solid #6366F1;
+  border-right: 20px solid #fff;
+  width: 0;
+}
+
+@media (max-width:640px) {
+  .invite {
+    margin-bottom: 0px;
+  }
+
+  .stub,
+  .check {
+    height: 120px;
+  }
+
+  .stub:before {
+    border-top: 10px solid #6366F1;
+    border-left: 10px solid hsl(222, 100%, 73%);
+  }
+
+  .stub:after {
+    border-bottom: 10px solid #6366F1;
+    border-left: 10px solid hsl(222, 100%, 73%);
+  }
+
+  .check:before {
+    border-top: 10px solid #6366F1;
+    border-right: 10px solid #fff;
+  }
+
+  .check:after {
+    border-bottom: 10px solid #6366F1;
+    border-right: 10px solid #fff;
+  }
+}
