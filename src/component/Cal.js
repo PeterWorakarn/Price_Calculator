@@ -30,7 +30,7 @@ export default function Cal() {
                             <label className="font-fontText px-1" htmlFor="allCustomer">จำนวนลูกค้าทั้งหมดที่ติดต่อเข้ามา </label>
                             <div className="flex mt-2">
                                 <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><FaUserFriends /></div>
-                                <input className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-brand" type="number" inputmode="decimal"  name="allCustomer" value={allCustomer} onChange={(e) => { setAllcustomer(parseInt(e.target.value)) }} />
+                                <input className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-brand" type="number" inputMode="decimal"  name="allCustomer" value={allCustomer} onChange={(e) => { setAllcustomer(parseInt(e.target.value)) }} />
                             </div>
                         </div>
 
@@ -38,7 +38,7 @@ export default function Cal() {
                             <label className="font-fontText px-1" htmlFor="Customer">จำนวนลูกค้าที่รองรับได้ </label>
                             <div className="flex mt-2">
                                 <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><FaUserAlt /></div>
-                                <input className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-brand" type="number" inputmode="decimal" name="Customer" value={customer} onChange={(e) => { setCustomer(parseInt(e.target.value)) }} />
+                                <input className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-brand" type="number" inputMode="decimal" name="Customer" value={customer} onChange={(e) => { setCustomer(parseInt(e.target.value)) }} />
                             </div>
                         </div>
 
@@ -46,7 +46,7 @@ export default function Cal() {
                             <label className="font-fontText px-1" htmlFor="Price">ราคาสินค้า หรือบริการต่อคน (บาท) </label>
                             <div className="flex mt-2">
                                 <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><RiPriceTagFill /></div>
-                                <input className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-brand" type="number" inputmode="decimal"  name="Price" value={price} onChange={(e) => { setPrice(parseInt(e.target.value)) }} />
+                                <input className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-brand" type="number" inputMode="decimal"  name="Price" value={price} onChange={(e) => { setPrice(parseInt(e.target.value)) }} />
                             </div>
                         </div>
 
